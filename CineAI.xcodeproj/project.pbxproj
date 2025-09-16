@@ -1,0 +1,949 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0932C5E2E5EF8840057A670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932C5D2E5EF8840057A670 /* AppDelegate.swift */; };
+		D0932C602E5EF8840057A670 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932C5F2E5EF8840057A670 /* SceneDelegate.swift */; };
+		D0932C622E5EF8840057A670 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932C612E5EF8840057A670 /* ViewController.swift */; };
+		D0932C672E5EF8880057A670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0932C662E5EF8880057A670 /* Assets.xcassets */; };
+		D0932C6A2E5EF8880057A670 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0932C682E5EF8880057A670 /* LaunchScreen.storyboard */; };
+		D0932C722E5EF9F70057A670 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0932C712E5EF9F70057A670 /* GoogleService-Info.plist */; };
+		D0932C802E5EFC930057A670 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D0932C7F2E5EFC930057A670 /* Alamofire */; };
+		D0932C822E5EFC930057A670 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D0932C812E5EFC930057A670 /* AlamofireDynamic */; };
+		D0932C872E5EFD070057A670 /* LoginContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932C862E5EFD070057A670 /* LoginContracts.swift */; };
+		D0932C8D2E5EFE830057A670 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932C8C2E5EFE830057A670 /* LoginRouter.swift */; };
+		D0932C8F2E5EFF710057A670 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932C8E2E5EFF710057A670 /* LoginInteractor.swift */; };
+		D0932C912E5EFF7C0057A670 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932C902E5EFF7C0057A670 /* LoginPresenter.swift */; };
+		D0932C932E5EFF930057A670 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932C922E5EFF930057A670 /* LoginViewController.swift */; };
+		D0932C982E5F23770057A670 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932C972E5F23770057A670 /* AuthService.swift */; };
+		D0932CA52E5F2CBF0057A670 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D0932CA42E5F2CBF0057A670 /* FirebaseAnalytics */; };
+		D0932CA72E5F2CBF0057A670 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = D0932CA62E5F2CBF0057A670 /* FirebaseAnalyticsOnDeviceConversion */; };
+		D0932CA92E5F2CBF0057A670 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D0932CA82E5F2CBF0057A670 /* FirebaseAnalyticsSwift */; };
+		D0932CAB2E5F2CBF0057A670 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = D0932CAA2E5F2CBF0057A670 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		D0932CAD2E5F2CBF0057A670 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = D0932CAC2E5F2CBF0057A670 /* FirebaseAppCheck */; };
+		D0932CB02E5F30650057A670 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D0932CAF2E5F30650057A670 /* FirebaseAuth */; };
+		D0932CB82E5F36B70057A670 /* RegisterContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932CB72E5F36B70057A670 /* RegisterContracts.swift */; };
+		D0932CBA2E5F39C30057A670 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932CB92E5F39C30057A670 /* RegisterInteractor.swift */; };
+		D0932CBC2E5F3B500057A670 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932CBB2E5F3B500057A670 /* RegisterPresenter.swift */; };
+		D0932CBE2E5F3C1C0057A670 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932CBD2E5F3C1C0057A670 /* RegisterViewController.swift */; };
+		D0932CC02E5F3E540057A670 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932CBF2E5F3E540057A670 /* RegisterRouter.swift */; };
+		D0932CC32E6026C60057A670 /* MovieModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932CC22E6026C50057A670 /* MovieModels.swift */; };
+		D0932CC52E6028190057A670 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932CC42E6028190057A670 /* MovieService.swift */; };
+		D0932CCD2E6031CC0057A670 /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932CCC2E6031CC0057A670 /* MainProtocols.swift */; };
+		D0932CCF2E60330B0057A670 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932CCE2E60330B0057A670 /* MainInteractor.swift */; };
+		D0932CD12E60344C0057A670 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932CD02E60344C0057A670 /* MainPresenter.swift */; };
+		D0932CD32E6036920057A670 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932CD22E6036920057A670 /* MainViewController.swift */; };
+		D0932CD52E6036AF0057A670 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932CD42E6036AF0057A670 /* MainRouter.swift */; };
+		D0932CD72E6038850057A670 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0932CD62E6038850057A670 /* MovieCollectionViewCell.swift */; };
+		D0932CDA2E603DFD0057A670 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D0932CD92E603DFD0057A670 /* Kingfisher */; };
+		D09B78112E72A3D1001C4B98 /* ChangeNameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B78102E72A3D1001C4B98 /* ChangeNameProtocol.swift */; };
+		D09B78132E72A3E3001C4B98 /* ChangeNamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B78122E72A3E3001C4B98 /* ChangeNamePresenter.swift */; };
+		D09B78152E72A3F1001C4B98 /* ChangeNameInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B78142E72A3F1001C4B98 /* ChangeNameInteractor.swift */; };
+		D09B78172E72A3FF001C4B98 /* ChangeNameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B78162E72A3FF001C4B98 /* ChangeNameRouter.swift */; };
+		D09B78192E72A412001C4B98 /* ChangeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B78182E72A412001C4B98 /* ChangeNameViewController.swift */; };
+		D0F40E6A2E61827100643303 /* DetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F40E692E61827100643303 /* DetailProtocols.swift */; };
+		D0F40E6C2E61829400643303 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F40E6B2E61829400643303 /* DetailViewController.swift */; };
+		D0F40E6E2E6182A900643303 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F40E6D2E6182A900643303 /* DetailInteractor.swift */; };
+		D0F40E702E6182BB00643303 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F40E6F2E6182BB00643303 /* DetailPresenter.swift */; };
+		D0F40E722E6182D100643303 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F40E712E6182D100643303 /* DetailRouter.swift */; };
+		D0F40E752E61A10E00643303 /* AIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F40E742E61A10E00643303 /* AIService.swift */; };
+		D0F40E7F2E65ADF200643303 /* SettingsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F40E7E2E65ADF200643303 /* SettingsProtocol.swift */; };
+		D0F40E812E65AFA800643303 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F40E802E65AFA800643303 /* SettingsViewController.swift */; };
+		D0F40E832E65B30A00643303 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F40E822E65B30A00643303 /* SettingsPresenter.swift */; };
+		D0F40E852E65B44000643303 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F40E842E65B44000643303 /* SettingsInteractor.swift */; };
+		D0F40E872E65B4F300643303 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F40E862E65B4F300643303 /* SettingsRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D0932C5A2E5EF8840057A670 /* CineAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0932C5D2E5EF8840057A670 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0932C5F2E5EF8840057A670 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D0932C612E5EF8840057A670 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0932C662E5EF8880057A670 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0932C692E5EF8880057A670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0932C6B2E5EF8880057A670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0932C712E5EF9F70057A670 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D0932C862E5EFD070057A670 /* LoginContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContracts.swift; sourceTree = "<group>"; };
+		D0932C8C2E5EFE830057A670 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		D0932C8E2E5EFF710057A670 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		D0932C902E5EFF7C0057A670 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		D0932C922E5EFF930057A670 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D0932C972E5F23770057A670 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		D0932CB72E5F36B70057A670 /* RegisterContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterContracts.swift; sourceTree = "<group>"; };
+		D0932CB92E5F39C30057A670 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		D0932CBB2E5F3B500057A670 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		D0932CBD2E5F3C1C0057A670 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D0932CBF2E5F3E540057A670 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
+		D0932CC22E6026C50057A670 /* MovieModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModels.swift; sourceTree = "<group>"; };
+		D0932CC42E6028190057A670 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		D0932CCC2E6031CC0057A670 /* MainProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
+		D0932CCE2E60330B0057A670 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		D0932CD02E60344C0057A670 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		D0932CD22E6036920057A670 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D0932CD42E6036AF0057A670 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		D0932CD62E6038850057A670 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		D09B78102E72A3D1001C4B98 /* ChangeNameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNameProtocol.swift; sourceTree = "<group>"; };
+		D09B78122E72A3E3001C4B98 /* ChangeNamePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNamePresenter.swift; sourceTree = "<group>"; };
+		D09B78142E72A3F1001C4B98 /* ChangeNameInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNameInteractor.swift; sourceTree = "<group>"; };
+		D09B78162E72A3FF001C4B98 /* ChangeNameRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNameRouter.swift; sourceTree = "<group>"; };
+		D09B78182E72A412001C4B98 /* ChangeNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNameViewController.swift; sourceTree = "<group>"; };
+		D0F40E692E61827100643303 /* DetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocols.swift; sourceTree = "<group>"; };
+		D0F40E6B2E61829400643303 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D0F40E6D2E6182A900643303 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		D0F40E6F2E6182BB00643303 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		D0F40E712E6182D100643303 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		D0F40E742E61A10E00643303 /* AIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIService.swift; sourceTree = "<group>"; };
+		D0F40E7E2E65ADF200643303 /* SettingsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProtocol.swift; sourceTree = "<group>"; };
+		D0F40E802E65AFA800643303 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D0F40E822E65B30A00643303 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		D0F40E842E65B44000643303 /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		D0F40E862E65B4F300643303 /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0932C572E5EF8840057A670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0932C802E5EFC930057A670 /* Alamofire in Frameworks */,
+				D0932CAB2E5F2CBF0057A670 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				D0932C822E5EFC930057A670 /* AlamofireDynamic in Frameworks */,
+				D0932CDA2E603DFD0057A670 /* Kingfisher in Frameworks */,
+				D0932CA52E5F2CBF0057A670 /* FirebaseAnalytics in Frameworks */,
+				D0932CAD2E5F2CBF0057A670 /* FirebaseAppCheck in Frameworks */,
+				D0932CA72E5F2CBF0057A670 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				D0932CA92E5F2CBF0057A670 /* FirebaseAnalyticsSwift in Frameworks */,
+				D0932CB02E5F30650057A670 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0932C512E5EF8840057A670 = {
+			isa = PBXGroup;
+			children = (
+				D0932C5C2E5EF8840057A670 /* CineAI */,
+				D0932C5B2E5EF8840057A670 /* Products */,
+				D0932CAE2E5F30650057A670 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D0932C5B2E5EF8840057A670 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0932C5A2E5EF8840057A670 /* CineAI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0932C5C2E5EF8840057A670 /* CineAI */ = {
+			isa = PBXGroup;
+			children = (
+				D0932C942E5F23500057A670 /* Core */,
+				D0932C832E5EFCCF0057A670 /* Modules */,
+				D0932C5D2E5EF8840057A670 /* AppDelegate.swift */,
+				D0932C5F2E5EF8840057A670 /* SceneDelegate.swift */,
+				D0932C612E5EF8840057A670 /* ViewController.swift */,
+				D0932C662E5EF8880057A670 /* Assets.xcassets */,
+				D0932C682E5EF8880057A670 /* LaunchScreen.storyboard */,
+				D0932C6B2E5EF8880057A670 /* Info.plist */,
+				D0932C712E5EF9F70057A670 /* GoogleService-Info.plist */,
+			);
+			path = CineAI;
+			sourceTree = "<group>";
+		};
+		D0932C832E5EFCCF0057A670 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D0F40E782E65ADB200643303 /* Settings */,
+				D0F40E632E61821A00643303 /* Detail */,
+				D0932CC62E602AEF0057A670 /* Main */,
+				D0932CB12E5F36700057A670 /* Register */,
+				D0932C842E5EFCDB0057A670 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D0932C842E5EFCDB0057A670 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D0932C8B2E5EFE640057A670 /* View */,
+				D0932C8A2E5EFE500057A670 /* Presenter */,
+				D0932C892E5EFE460057A670 /* Interactor */,
+				D0932C882E5EFE390057A670 /* Router */,
+				D0932C852E5EFCF30057A670 /* Protocols */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D0932C852E5EFCF30057A670 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D0932C862E5EFD070057A670 /* LoginContracts.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D0932C882E5EFE390057A670 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D0932C8C2E5EFE830057A670 /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D0932C892E5EFE460057A670 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D0932C8E2E5EFF710057A670 /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D0932C8A2E5EFE500057A670 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D0932C902E5EFF7C0057A670 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D0932C8B2E5EFE640057A670 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0932C922E5EFF930057A670 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0932C942E5F23500057A670 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D0932C952E5F23570057A670 /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D0932C952E5F23570057A670 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D0F40E732E61A0F900643303 /* AI */,
+				D0932CC12E6026AD0057A670 /* Network */,
+				D0932C962E5F23640057A670 /* Auth */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D0932C962E5F23640057A670 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D0932C972E5F23770057A670 /* AuthService.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D0932CAE2E5F30650057A670 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0932CB12E5F36700057A670 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				D0932CB62E5F369C0057A670 /* View */,
+				D0932CB52E5F36950057A670 /* Interactor */,
+				D0932CB42E5F368B0057A670 /* Presenter */,
+				D0932CB32E5F36860057A670 /* Router */,
+				D0932CB22E5F36780057A670 /* Protocols */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		D0932CB22E5F36780057A670 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D0932CB72E5F36B70057A670 /* RegisterContracts.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D0932CB32E5F36860057A670 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D0932CBF2E5F3E540057A670 /* RegisterRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D0932CB42E5F368B0057A670 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D0932CBB2E5F3B500057A670 /* RegisterPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D0932CB52E5F36950057A670 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D0932CB92E5F39C30057A670 /* RegisterInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D0932CB62E5F369C0057A670 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0932CBD2E5F3C1C0057A670 /* RegisterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0932CC12E6026AD0057A670 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D0932CC22E6026C50057A670 /* MovieModels.swift */,
+				D0932CC42E6028190057A670 /* MovieService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D0932CC62E602AEF0057A670 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D0932CC82E602AFF0057A670 /* Router */,
+				D0932CCB2E602B130057A670 /* View */,
+				D0932CCA2E602B0E0057A670 /* Presenter */,
+				D0932CC92E602B050057A670 /* Interactor */,
+				D0932CC72E602AF80057A670 /* Protocols */,
+				D0932CD62E6038850057A670 /* MovieCollectionViewCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D0932CC72E602AF80057A670 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D0932CCC2E6031CC0057A670 /* MainProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D0932CC82E602AFF0057A670 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D0932CD42E6036AF0057A670 /* MainRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D0932CC92E602B050057A670 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D0932CCE2E60330B0057A670 /* MainInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D0932CCA2E602B0E0057A670 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D0932CD02E60344C0057A670 /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D0932CCB2E602B130057A670 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0932CD22E6036920057A670 /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D09B780A2E72A36E001C4B98 /* ChangeUserName */ = {
+			isa = PBXGroup;
+			children = (
+				D09B780F2E72A3BB001C4B98 /* Protocol */,
+				D09B780E2E72A3AF001C4B98 /* View */,
+				D09B780D2E72A3A9001C4B98 /* Presenter */,
+				D09B780C2E72A3A2001C4B98 /* Interactor */,
+				D09B780B2E72A398001C4B98 /* Router */,
+			);
+			path = ChangeUserName;
+			sourceTree = "<group>";
+		};
+		D09B780B2E72A398001C4B98 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D09B78162E72A3FF001C4B98 /* ChangeNameRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D09B780C2E72A3A2001C4B98 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D09B78142E72A3F1001C4B98 /* ChangeNameInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D09B780D2E72A3A9001C4B98 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D09B78122E72A3E3001C4B98 /* ChangeNamePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D09B780E2E72A3AF001C4B98 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D09B78182E72A412001C4B98 /* ChangeNameViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D09B780F2E72A3BB001C4B98 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D09B78102E72A3D1001C4B98 /* ChangeNameProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		D0F40E632E61821A00643303 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D0F40E682E61825600643303 /* Protocol */,
+				D0F40E672E61824E00643303 /* View */,
+				D0F40E662E61824600643303 /* Presenter */,
+				D0F40E652E61823A00643303 /* Interactor */,
+				D0F40E642E61822C00643303 /* Router */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		D0F40E642E61822C00643303 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D0F40E712E6182D100643303 /* DetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D0F40E652E61823A00643303 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D0F40E6D2E6182A900643303 /* DetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D0F40E662E61824600643303 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D0F40E6F2E6182BB00643303 /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D0F40E672E61824E00643303 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0F40E6B2E61829400643303 /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0F40E682E61825600643303 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D0F40E692E61827100643303 /* DetailProtocols.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		D0F40E732E61A0F900643303 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				D0F40E742E61A10E00643303 /* AIService.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		D0F40E782E65ADB200643303 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D09B780A2E72A36E001C4B98 /* ChangeUserName */,
+				D0F40E7D2E65ADDB00643303 /* Protocol */,
+				D0F40E7C2E65ADD500643303 /* View */,
+				D0F40E7B2E65ADCE00643303 /* Presenter */,
+				D0F40E7A2E65ADC200643303 /* Interactor */,
+				D0F40E792E65ADBB00643303 /* Router */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D0F40E792E65ADBB00643303 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D0F40E862E65B4F300643303 /* SettingsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D0F40E7A2E65ADC200643303 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D0F40E842E65B44000643303 /* SettingsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D0F40E7B2E65ADCE00643303 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D0F40E822E65B30A00643303 /* SettingsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D0F40E7C2E65ADD500643303 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0F40E802E65AFA800643303 /* SettingsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0F40E7D2E65ADDB00643303 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D0F40E7E2E65ADF200643303 /* SettingsProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0932C592E5EF8840057A670 /* CineAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0932C6E2E5EF8880057A670 /* Build configuration list for PBXNativeTarget "CineAI" */;
+			buildPhases = (
+				D0932C562E5EF8840057A670 /* Sources */,
+				D0932C572E5EF8840057A670 /* Frameworks */,
+				D0932C582E5EF8840057A670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CineAI;
+			packageProductDependencies = (
+				D0932C7F2E5EFC930057A670 /* Alamofire */,
+				D0932C812E5EFC930057A670 /* AlamofireDynamic */,
+				D0932CA42E5F2CBF0057A670 /* FirebaseAnalytics */,
+				D0932CA62E5F2CBF0057A670 /* FirebaseAnalyticsOnDeviceConversion */,
+				D0932CA82E5F2CBF0057A670 /* FirebaseAnalyticsSwift */,
+				D0932CAA2E5F2CBF0057A670 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				D0932CAC2E5F2CBF0057A670 /* FirebaseAppCheck */,
+				D0932CAF2E5F30650057A670 /* FirebaseAuth */,
+				D0932CD92E603DFD0057A670 /* Kingfisher */,
+			);
+			productName = CineAI;
+			productReference = D0932C5A2E5EF8840057A670 /* CineAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0932C522E5EF8840057A670 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					D0932C592E5EF8840057A670 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = D0932C552E5EF8840057A670 /* Build configuration list for PBXProject "CineAI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0932C512E5EF8840057A670;
+			packageReferences = (
+				D0932C7E2E5EFC930057A670 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				D0932CA32E5F2CBF0057A670 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D0932CD82E603DFD0057A670 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = D0932C5B2E5EF8840057A670 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0932C592E5EF8840057A670 /* CineAI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0932C582E5EF8840057A670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0932C6A2E5EF8880057A670 /* LaunchScreen.storyboard in Resources */,
+				D0932C672E5EF8880057A670 /* Assets.xcassets in Resources */,
+				D0932C722E5EF9F70057A670 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0932C562E5EF8840057A670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F40E6A2E61827100643303 /* DetailProtocols.swift in Sources */,
+				D0F40E6E2E6182A900643303 /* DetailInteractor.swift in Sources */,
+				D0932C622E5EF8840057A670 /* ViewController.swift in Sources */,
+				D0932C872E5EFD070057A670 /* LoginContracts.swift in Sources */,
+				D0932C912E5EFF7C0057A670 /* LoginPresenter.swift in Sources */,
+				D0932C982E5F23770057A670 /* AuthService.swift in Sources */,
+				D0932C8F2E5EFF710057A670 /* LoginInteractor.swift in Sources */,
+				D0932CCF2E60330B0057A670 /* MainInteractor.swift in Sources */,
+				D0932CC02E5F3E540057A670 /* RegisterRouter.swift in Sources */,
+				D0932CCD2E6031CC0057A670 /* MainProtocols.swift in Sources */,
+				D0932CD52E6036AF0057A670 /* MainRouter.swift in Sources */,
+				D0932CD12E60344C0057A670 /* MainPresenter.swift in Sources */,
+				D0932C932E5EFF930057A670 /* LoginViewController.swift in Sources */,
+				D0932CC32E6026C60057A670 /* MovieModels.swift in Sources */,
+				D0932CB82E5F36B70057A670 /* RegisterContracts.swift in Sources */,
+				D09B78152E72A3F1001C4B98 /* ChangeNameInteractor.swift in Sources */,
+				D0F40E872E65B4F300643303 /* SettingsRouter.swift in Sources */,
+				D0F40E722E6182D100643303 /* DetailRouter.swift in Sources */,
+				D0932CBC2E5F3B500057A670 /* RegisterPresenter.swift in Sources */,
+				D0F40E6C2E61829400643303 /* DetailViewController.swift in Sources */,
+				D0932C5E2E5EF8840057A670 /* AppDelegate.swift in Sources */,
+				D0932CBA2E5F39C30057A670 /* RegisterInteractor.swift in Sources */,
+				D0932CBE2E5F3C1C0057A670 /* RegisterViewController.swift in Sources */,
+				D0F40E7F2E65ADF200643303 /* SettingsProtocol.swift in Sources */,
+				D0F40E752E61A10E00643303 /* AIService.swift in Sources */,
+				D09B78172E72A3FF001C4B98 /* ChangeNameRouter.swift in Sources */,
+				D09B78132E72A3E3001C4B98 /* ChangeNamePresenter.swift in Sources */,
+				D0F40E812E65AFA800643303 /* SettingsViewController.swift in Sources */,
+				D0F40E832E65B30A00643303 /* SettingsPresenter.swift in Sources */,
+				D09B78112E72A3D1001C4B98 /* ChangeNameProtocol.swift in Sources */,
+				D0932C8D2E5EFE830057A670 /* LoginRouter.swift in Sources */,
+				D0932CC52E6028190057A670 /* MovieService.swift in Sources */,
+				D0932CD72E6038850057A670 /* MovieCollectionViewCell.swift in Sources */,
+				D0F40E702E6182BB00643303 /* DetailPresenter.swift in Sources */,
+				D0932C602E5EF8840057A670 /* SceneDelegate.swift in Sources */,
+				D09B78192E72A412001C4B98 /* ChangeNameViewController.swift in Sources */,
+				D0932CD32E6036920057A670 /* MainViewController.swift in Sources */,
+				D0F40E852E65B44000643303 /* SettingsInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D0932C682E5EF8880057A670 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0932C692E5EF8880057A670 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0932C6C2E5EF8880057A670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0932C6D2E5EF8880057A670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0932C6F2E5EF8880057A670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CineAI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.info.CineAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0932C702E5EF8880057A670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CineAI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.info.CineAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0932C552E5EF8840057A670 /* Build configuration list for PBXProject "CineAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0932C6C2E5EF8880057A670 /* Debug */,
+				D0932C6D2E5EF8880057A670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0932C6E2E5EF8880057A670 /* Build configuration list for PBXNativeTarget "CineAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0932C6F2E5EF8880057A670 /* Debug */,
+				D0932C702E5EF8880057A670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0932C7E2E5EFC930057A670 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		D0932CA32E5F2CBF0057A670 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
+		D0932CD82E603DFD0057A670 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0932C7F2E5EFC930057A670 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0932C7E2E5EFC930057A670 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		D0932C812E5EFC930057A670 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0932C7E2E5EFC930057A670 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+		D0932CA42E5F2CBF0057A670 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0932CA32E5F2CBF0057A670 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		D0932CA62E5F2CBF0057A670 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0932CA32E5F2CBF0057A670 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		D0932CA82E5F2CBF0057A670 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0932CA32E5F2CBF0057A670 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		D0932CAA2E5F2CBF0057A670 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0932CA32E5F2CBF0057A670 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		D0932CAC2E5F2CBF0057A670 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0932CA32E5F2CBF0057A670 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		D0932CAF2E5F30650057A670 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0932CA32E5F2CBF0057A670 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D0932CD92E603DFD0057A670 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0932CD82E603DFD0057A670 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D0932C522E5EF8840057A670 /* Project object */;
+}
